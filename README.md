@@ -9,10 +9,10 @@ npm run client-install
 # Run the client & server with concurrently
 npm run dev
 
-# Run the Express server only
+# Run the Flask server only (Backend)
 npm run server
 
-# Run the React client only
+# Run the React client only (Frontend)
 npm run client
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
