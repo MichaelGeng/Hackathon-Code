@@ -1,8 +1,7 @@
 ## Quick Start
 
-``` bash
-# Install dependencies for server
-npm install
+# Clone the repo into local directory
+git clone https://github.com/MichaelGeng/Hackathon-Code.git
 
 # Install dependencies for client
 npm run client-install
