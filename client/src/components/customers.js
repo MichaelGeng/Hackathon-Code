@@ -11,8 +11,7 @@ class Customers extends Component {
 
   componentDidMount() {
     fetch('/api/customers')
-      .then(res => res.json())
-      .then(customers => this.setState({customers}, () => console.log('Customers fetched...', customers)));
+      console.log('okay we fetched')
   }
 
   render() {
@@ -20,9 +19,7 @@ class Customers extends Component {
       <div>
         <h2>Customers</h2>
         <ul>
-        {this.state.customers.map(customer => 
-          <li key={customer.id}>{customer.firstName} {customer.lastName}</li>
-        )}
+          <h1>Fullstack app working</h1>
         </ul>
       </div>
     );
