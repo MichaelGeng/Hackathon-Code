@@ -10,8 +10,11 @@ class Customers extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/customers')
-      console.log('okay we fetched')
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(customers => this.setState({customers}, () =>('Customers fetched', customers)));
+      console.log(JSON);
+
   }
 
   render() {
@@ -20,6 +23,7 @@ class Customers extends Component {
         <h2>Customers</h2>
         <ul>
           <h1>Fullstack app working</h1>
+          {this.state.customers}
         </ul>
       </div>
     );
